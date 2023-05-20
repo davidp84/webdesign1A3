@@ -1,16 +1,177 @@
 /* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
-    /* some basic css resetting */
-body { margin: 0; box-sizing: border-box; }
-a { text-decoration: none; color:black; }
+/* some basic css resetting */
+body {
+  padding: 15px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Belleza", "Bell MT", cursive;
+}
+
+:root {
+  --clr-green-text: #004b23;
+  --clr-green-background: #004b2348;
+  --clr-footer-background: #004b2311;
+  --clr-nav-background: #fffaf0;
+}
+
+/* Makes the html / webpage as tall or taller as the browser window */
+html {
+  min-height: 100vh;
+}
+
+/* Makes the body as tall or taller as the browser window, less html element's padding */
+body {
+  min-height: calc(100vh - 2 * 20px);
+}
+
+header,
+nav,
+main,
+footer,
+aside,
+section,
+article,
+details,
+div {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+
+h3 {
+  text-align: center;
+  color: var(--clr-green-text);
+}
+
+img {
+    max-width: 946px;
+    max-width: 100%;
+  }
 
 /* ==========HEADER============= */
-/* ==========LOGO============= */
-/* ==========NAVIGATION============= */
 
+header {
+  font-size: clamp(3rem, 10vw, 7rem);
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  margin: 0;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header * {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+div#navbar {
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* ==========LOGO============= */
+
+img.logo {
+    max-height: 200px;
+  }
+  
+/* ==========NAVIGATION============= */
+nav {
+  display: inline-block;
+  justify-content: space-around;
+  width: 100%;
+  top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+nav,
+footer {
+  padding: 10px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0.2em;
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 3em;
+}
+
+nav a#home__link {
+  color: var(--clr-green-text);
+}
+
+.nav_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    /* background-color: var(--clr-footer-background);  */
+    /* color: var(--clr-green-text); */
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
+  
+  #home__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    /* background-color: var(--clr-footer-background);  */
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
+  
+  .nav_link:hover,
+  .nav_link:focus {
+    background-color: var(--clr-green-text);
+    color: rgba(192, 238, 214, 0.555);
+    transition: 0.6s;
+  }
+  
+  #home__link:hover,
+  #home__link:focus {
+    background-color: var(--clr-green-text);
+    color: rgba(192, 238, 214, 0.555);
+    transition: 0.6s;
+  }
+
+  #burger, .menu {
+    display: none;
+  }
 
 /* ==========MAIN BODY CONTENT============= */
 
+h1.company-name {
+    color: var(--clr-green-text);
+    overflow-wrap: break-word;
+    margin-left: 10px;
+  }
 
 /* ==========SECTION 1 STYLING============= */
 
@@ -20,58 +181,52 @@ a { text-decoration: none; color:black; }
 
 /* ==========SECTION 4 STYLING============= */
 
-
 /* ==========FOOTER STYLIING============= */
 
-
-
-
 /* ==========RESPONSIVE DESIGN============= */
-
-/* ===== 5K RETINA MAC LABS: Media queries for Curtin Uni mac lab testing only ===== */
-@media only screen and (max-width: 5120px) {
-
-        
-}
-
 /* ===== DESKTOP HD: Media queries for most HD desktops ===== */
 @media only screen and (max-width: 1920px) {
-   
-    
-    
 }
 
 /* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
-@media only screen and (max-width: 1366px) { 
-
-      
-    
+@media only screen and (max-width: 1366px) {
 }
 
 /* ===== TABLET: Media queries for verticle and horizontal ===== */
-@media only screen and (max-width: 1024px) { 
-
-      
-    
+@media only screen and (max-width: 1024px) {
 }
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: block;
+        font-size: 40px;
+        /* padding: 10px; */
+    }
 
-    
-        
+    nav ul {
+        display: none;
+    }
+
+    nav input:checked ~ ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        background-color: var(--clr-footer-background);
+        border-top: solid 1px #1c1c1c;
+        width: 100%;
+        padding: .9em;
+    }
+
+    nav ul li:last-of-type {
+        border-bottom: solid 1px #1c1c1c;
+    }
 }
 
 /* ===== MOBILE: Media queries for small mobile resolution. ===== */
-@media only screen and (max-width: 640px) { 
-
-    
-        
+@media only screen and (max-width: 640px) {
 }
 
-
-@media only screen and (max-width: 360px) { 
-
-            
-        
+@media only screen and (max-width: 360px) {
 }
-
