@@ -198,7 +198,7 @@ div.image-gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items:flex-start;
 }
 
 .gallery-large{
