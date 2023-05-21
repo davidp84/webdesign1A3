@@ -4,14 +4,25 @@
         <meta charset="utf-8">     
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Adds title to browser tab -->
         <title>Lilac Valley Farm Stay</title> 
-
+         
+        <!-- Adds meta data for seo purposes-->
         <meta name="author" content="David Pulvirenti">
         <meta name="description" content="Homepage for Lilac Valley Farm Stay">
         <meta name="keywords" content="Lilac Valley, Farm Stay, Holiday, Family friendly, Farm, Animals">
 
+        <!-- links stylesheet and fonts. -->
         <link rel="stylesheet" href="css/style.css">         
-        <link rel="icon" href="./images/lilac-valley.png"> 
+        <link rel="icon" href="./images/lilac-valley.png">  <!-- Adds icon in browser tab -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Belleza&family=Noto+Serif&display=swap"
+        rel="stylesheet">
                 
     </head>
     <body>
@@ -22,6 +33,7 @@
         <!--NAVIGATION-->
         <div class="main-grid">  
             <div id="navbar">
+            <!-- Adds logo to header -->
             <header class="logo-header">
                 <a href="index.html">
                     <img class="logo" src="./images/lilac-valley.png" alt="Lilac Valley Farm Stay Logo">
@@ -30,12 +42,15 @@
 
             </header>
         
+            <!-- Navigation Bar -->
             <nav id="nav">
               <div>
+                <!-- Hamburger Menu -->
                 <label class="menu" for="burger">&#9776;</label>
                 <input id="burger" type="checkbox">
+                <!-- Navigation menu items -->
                 <ul>
-                  <li><a href="index.html" id="home__link">Home</a></li>
+                  <li><a href="index.html" class="nav_link">Home</a></li>
                   <li><a href="#about" class="nav_link">About</a></li>
                   <li><a href="#gallery" class="nav_link">Gallery</a></li>
                   <li><a href="#bookings" class="nav_link">Bookings</a></li>
@@ -47,59 +62,109 @@
         </div>
         <!--MAIN CONTENT-->
         <main>
+            <!-- Hero Image -->
             <div class="hero-box">
                 <img class="hero" src="./images/hero-shot1.jpeg" alt="Scenic view of Lilac Valley Farm Stay property">
-                <p class="hero-text">&#8595;</p>
+                <p id="hero-text">&#8595;</p>
             </div>
             <!--SECTION 1-->
-                <section id="about">
-            <h1 class="company-name">About Lilac Valley Farm Stay</h1>
-            <p class="about">Lilac Valley Farm Stay is a rustic farm stay accommodation in the hills of the Blue Mountains, just 90 minutes from Sydney.
+            <section id="about">
+                <h1 class="company-name">About Lilac Valley Farm Stay</h1>
+                <p class="about">Lilac Valley Farm Stay is a rustic farm stay accommodation in the hills of the Blue Mountains, just 90 minutes from Sydney.
                  The property is owned by Marina Ye, a local interior designer who purchased the property three years ago with a plan to renovate. 
                  After years of hard work, the property now features a beautifully restored, open plan, luxury barn house, 
                  on four acres of land home to sheep, chickens, ducks and one very friendly goat named Rosie.
                   There is an outdoor plunge pool just off the back verandah, and a stunning cottage garden.</p>
-            <p class="about">Lilac Valley Farm Stay is set in the World Heritage-listed Blue Mountains, a stay here transports you to picturesque
+                <p class="about">Lilac Valley Farm Stay is set in the World Heritage-listed Blue Mountains, a stay here transports you to picturesque
                  countryside where you can experience the joys of a quintessential country lifestyle. Enjoy canoeing, bushwalks, swimming, catching yabbies, 
                  running around with your dog (yes, we're pet friendly!) ...or just kick back and enjoy the tranquil surrounds.</p>
-            <p class="about">Your whole family will love the farm stay experience at Lilac Valley Farm Stay. </p>
-        </section>
+                <p class="about">Your whole family will love the farm stay experience at Lilac Valley Farm Stay. </p>
+            </section>
             <!--SECTION 2-->
             <section id="gallery">
                 <h2 class="section-titles">Gallery</h2>
-                <img class="gallery-large" src="./images/barn.jpg" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-small" src="./images/chicks.jpg" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-large" src="./images/hiking.jpeg" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-small" src="./images/food.png" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-large" src="./images/horse-riding.png" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-large" src="./images/hero-shot.jpeg" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-small" src="./images/landscape.jpeg" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-large" src="./images/landscape-1.png" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-small" src="./images/landscape-2.jpeg" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-small" src="./images/pool.jpg" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-small" src="./images/room.png" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-large" src="./images/party.png" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-large" src="./images/rosie.jpg" alt="Lilac Valley Farm Stay Logo">
-                <img class="gallery-large" src="./images/three-sisters.png" alt="Lilac Valley Farm Stay Logo">
+                <div id="image-gallery">
+                    <img class="gallery-large" src="./images/barn.jpg" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-small" src="./images/chicks.jpg" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-large" src="./images/hiking.jpeg" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-small" src="./images/food.png" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-large" src="./images/horse-riding.png" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-large" src="./images/hero-shot.jpeg" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-small" src="./images/landscape.jpeg" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-large" src="./images/landscape-1.png" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-small" src="./images/pool.jpg" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-small" src="./images/room.png" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-large" src="./images/party.png" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-large" src="./images/rosie.jpg" alt="Lilac Valley Farm Stay Logo">
+                    <img class="gallery-large" src="./images/three-sisters.png" alt="Lilac Valley Farm Stay Logo">
+                </div>
             </section>
 
             <!--SECTION 3-->
             <section id="bookings">
                 <h2 class="section-titles">Book With Us</h2>
+                <div class="forms">
+                <!-- Booking Form -->
+                <form class="booking" method="post">
+                    <label for="start-date">Start Date</label>
+                    <input id="start-date" type="date" name="start-date" required/> 
+                    <label for="end-date">End Date</label>
+                    <input id="end-date" type="date" name="end-date" required/>
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="name" required/>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required/>
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="text" name="phone" pattern="^(\(04\)|04|\+614)( ?\d){8}$" required/> <!-- Sets required Pattern so that text matches Mobile -->
+                    <input class="submit-btn" type="submit" name="book" value="Book Now">
+                </form>
+            </div>
+
             </section>
     
             <!--SECTION 4-->
             <section id="contact">
                 <h2 class="section-titles">Contact Us</h2>
+                
+                <div class="forms">
+                <form class="contact" method="post">
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="name" required/>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required/>
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="text" name="phone" pattern="^(\(04\)|04|\+614)( ?\d){8}$" required/>
+                    <label for="message">Message</label>
+                    <textarea id="message" type="textarea" name="message" rows="4" cols="50"></textarea> <!-- larger text area for message -->
+                    <input class="submit-btn" type="submit" name="contact" value="Contact Us">
+                </form>
+            </div>
             </section>
 
 
         <!--MAIN CONTENT ENDS-->
 
-        
         <!--FOOTER-->
-        <!--CONTACT FORM OR TEXT-->
-        <!--SOCIAL MEDIA ?-->
+        <footer>
+            <div class="contact-section">
+                <div class="contact-left">
+                    <p class="contact-icons">&#9742;</p>
+                    <p class="contact-icons">&#64;</p>
+                    <p class="contact-icons">&#8625;</p>
+                </div>
+                <div class="contact-right">
+                    <p class="contact-details">02 4785 9635</p>
+                    <p class="contact-details">info@lilacvalley.com.au</p>
+                    <p class="contact-details">123 Lilac Valley Way, Katoomba NSW 2780</p>
+                </div>
+            </div>
+            <p>This website has been created as part of an assignment in an approved course of study for Curtin
+                University and contains copyright material not created by the author. All copyright material used
+                remains copyright of the respective owners and has been used here pursuant to Section 40 of the
+                Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without
+                consent of the original copyright owners. See code comments for references.</p>
+        </footer>
+        
     </main>
     </body> 
 </html>
